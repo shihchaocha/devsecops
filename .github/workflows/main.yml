@@ -1,5 +1,5 @@
 name: 'Secret Scanning Review'
-on: push
+on: pull_request
 
 jobs:
   secret-scanning-review:
