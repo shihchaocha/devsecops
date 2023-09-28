@@ -5,6 +5,10 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication
 public class DevsecopsApplication {
+	@GetMapping("/")
+	public String hello() {
+		return "<html><body><h1>Hello DevSecOps</body></h1></html>";
+	}
 
 	public static void main(String[] args) {
 		SpringApplication.run(DevsecopsApplication.class, args);
